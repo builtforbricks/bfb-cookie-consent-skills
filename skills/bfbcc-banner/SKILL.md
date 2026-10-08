@@ -52,8 +52,9 @@ text, the four category switches, the services list, Save, Reject, Back). It is 
 Start from it rather than from nothing; restyle it with ordinary Bricks settings.
 
 A starter made before `1.0.0-beta.2` has 8-character element ids, and Bricks' abilities refuse to render or update it
-(`bricks_invalid_element_id`). Ask the owner before saving it again with new 6-character ids: keep every element,
-setting, label, parent and order, and tell them that custom CSS naming the old `#brxe-` ids needs the new ones.
+(`bricks_invalid_element_id`); in the builder, right-click actions on its elements do nothing. Ask the owner before
+saving it again with new 6-character ids: keep every element, setting, label, parent and order, and tell them that
+custom CSS naming the old `#brxe-` ids needs the new ones.
 
 ## Design rules
 
