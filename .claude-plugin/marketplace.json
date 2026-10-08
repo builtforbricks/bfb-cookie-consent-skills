@@ -1,0 +1,28 @@
+{
+    "name": "bfb-cookie-consent-skills",
+    "owner": {
+        "name": "Built for Bricks",
+        "url": "https://builtforbricks.com"
+    },
+    "metadata": {
+        "description": "Agent skills for BFB Cookie Consent, the consent banner plugin for Bricks Builder: set up or check consent, build a banner that works, read the scan, write the cookie list.",
+        "version": "0.1.0"
+    },
+    "plugins": [
+        {
+            "name": "bfb-cookie-consent",
+            "description": "BFB Cookie Consent skills for Bricks MCP clients: start-here, the setup flow, the banner, the scan, the cookie list, embeds and the update check.",
+            "source": "./",
+            "strict": false,
+            "skills": [
+                "./skills/bfbcc-start-here",
+                "./skills/bfbcc-setup",
+                "./skills/bfbcc-banner",
+                "./skills/bfbcc-scan-findings",
+                "./skills/bfbcc-cookie-list",
+                "./skills/bfbcc-embeds",
+                "./skills/bfbcc-update"
+            ]
+        }
+    ]
+}

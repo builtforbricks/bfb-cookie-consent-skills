@@ -1,0 +1,150 @@
+[
+    {
+        "name": "bfbcc-banner",
+        "label": "Cookie consent",
+        "settings": {
+            "position": "left"
+        },
+        "children": [
+            {
+                "name": "bfbcc-panel",
+                "label": "Notice",
+                "settings": {
+                    "view": "notice"
+                },
+                "children": [
+                    {
+                        "name": "heading",
+                        "settings": {
+                            "text": "Cookie preferences",
+                            "tag": "h2"
+                        }
+                    },
+                    {
+                        "name": "text-basic",
+                        "settings": {
+                            "text": "Optional services stay off until you allow them. You can change your choice at any time."
+                        }
+                    },
+                    {
+                        "name": "block",
+                        "label": "Actions",
+                        "settings": {
+                            "_cssClasses": "bfbcc-actions"
+                        },
+                        "children": [
+                            {
+                                "name": "bfbcc-action",
+                                "settings": {
+                                    "text": "Reject optional",
+                                    "action": "reject"
+                                }
+                            },
+                            {
+                                "name": "bfbcc-action",
+                                "settings": {
+                                    "text": "Accept all",
+                                    "action": "accept"
+                                }
+                            },
+                            {
+                                "name": "bfbcc-action",
+                                "settings": {
+                                    "text": "Preferences",
+                                    "action": "preferences"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "bfbcc-panel",
+                "label": "Preferences",
+                "settings": {
+                    "view": "preferences"
+                },
+                "children": [
+                    {
+                        "name": "heading",
+                        "settings": {
+                            "text": "Cookie settings",
+                            "tag": "h2"
+                        }
+                    },
+                    {
+                        "name": "text-basic",
+                        "settings": {
+                            "text": "Optional services stay off until you choose them. Your preference is saved in this browser."
+                        }
+                    },
+                    {
+                        "name": "bfbcc-category",
+                        "settings": {
+                            "category": "necessary",
+                            "label": "Necessary",
+                            "description": "Remembers your consent choice. Always active."
+                        }
+                    },
+                    {
+                        "name": "bfbcc-category",
+                        "settings": {
+                            "category": "preferences",
+                            "label": "Preferences",
+                            "description": "Optional services that remember your preferences."
+                        }
+                    },
+                    {
+                        "name": "bfbcc-category",
+                        "settings": {
+                            "category": "analytics",
+                            "label": "Analytics",
+                            "description": "Optional services that measure visits and page activity."
+                        }
+                    },
+                    {
+                        "name": "bfbcc-category",
+                        "settings": {
+                            "category": "marketing",
+                            "label": "Marketing",
+                            "description": "Optional advertising and campaign measurement services."
+                        }
+                    },
+                    {
+                        "name": "bfbcc-services"
+                    },
+                    {
+                        "name": "block",
+                        "label": "Preference actions",
+                        "settings": {
+                            "_cssClasses": "bfbcc-actions"
+                        },
+                        "children": [
+                            {
+                                "name": "bfbcc-action",
+                                "settings": {
+                                    "text": "Save choices",
+                                    "action": "save"
+                                }
+                            },
+                            {
+                                "name": "bfbcc-action",
+                                "settings": {
+                                    "text": "Reject optional",
+                                    "action": "reject"
+                                }
+                            },
+                            {
+                                "name": "bfbcc-action",
+                                "settings": {
+                                    "text": "Back",
+                                    "action": "back"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]
