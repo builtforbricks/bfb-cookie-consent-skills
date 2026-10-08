@@ -60,7 +60,9 @@ does not ask visitors again.
   draft it from the plugin's data as their draft, say plainly that they must check it, and never call it compliant.
 - Touch what the plugin keeps for the owner alone, by any route: consent records and their export, history, privacy
   opt-out settings and classifications, custom scripts, switching the banner on or off, "Delete all plugin data",
-  capabilities, languages, A/B tests.
+  capabilities, languages, A/B tests. Point the owner to them instead: the banner's switch is under **Settings**;
+  custom scripts are on the **Services** tab; consent records exist only once the owner switches on **Settings →
+  Consent records** (off by default), and they are searched and exported as CSV on the **History** tab.
 - Invent a cookie name, a duration or a purpose. If the vendor publishes nothing, say so.
 - Tick an agent-written entry as checked, or confirm a setup step, on the owner's behalf. Those are theirs.
 - Register a service while its copy installed elsewhere still loads: it then loads twice, once without permission.

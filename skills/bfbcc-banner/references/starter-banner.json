@@ -2,9 +2,6 @@
     {
         "name": "bfbcc-banner",
         "label": "Cookie consent",
-        "settings": {
-            "position": "left"
-        },
         "children": [
             {
                 "name": "bfbcc-panel",
