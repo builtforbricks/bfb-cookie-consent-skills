@@ -62,12 +62,14 @@ Then start a new chat and ask: *List the loaded skills whose names start with `b
 | `bfbcc-scan-findings` | The scan's buckets, where trackers are usually installed, remove at the source then register, what the scan cannot see |
 | `bfbcc-cookie-list` | The cookie list: the library's checked descriptions first, otherwise the vendor's own documentation, exact names, durations never rounded down, the agent mark |
 | `bfbcc-embeds` | The YouTube and Google Map elements and their placeholders |
+| `bfbcc-cookie-policy` | Drafts the site's cookie policy from its real data, with the live cookie list embedded and placeholders for what no tool knows, saved as a draft page for a lawyer to review |
 | `bfbcc-update` | Compares the pack with the plugin on the site; updates on request |
 
 ## What these skills never do
 
-They never claim a site is compliant, and they never write legal text as the plugin's. A client can draft a cookie or
-privacy policy from the plugin's data when its owner asks; what is published is the owner's to check. They never touch
+They never claim a site is compliant, and never present a policy as the plugin's or as checked. On its owner's request
+a client drafts the cookie policy from the site's real data (`bfbcc-cookie-policy`); the draft is the owner's, and a
+lawyer should review it before it is published. They never touch
 consent records, opt-outs, custom scripts, the banner's on and off, or plugin data deletion: the plugin keeps those for
 its owner, and its abilities do not offer them.
 

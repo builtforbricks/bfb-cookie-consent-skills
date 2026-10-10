@@ -56,8 +56,9 @@ does not ask visitors again.
 
 - **Claim the site is compliant**, "GDPR-ready", "certified", or that the banner "blocks all tracking". Describe what
   the plugin does instead: it holds back the services registered with it.
-- **Write legal text as the plugin's or these skills'.** If the owner asks you to draft a cookie or privacy policy,
-  draft it from the plugin's data as their draft, say plainly that they must check it, and never call it compliant.
+- **Present a policy as the plugin's, or as checked.** When the owner asks for a cookie policy, write a full draft from
+  the site's real data with `bfbcc-cookie-policy`: it is their draft, and a lawyer should review it before it is
+  published. Never call it compliant.
 - Touch what the plugin keeps for the owner alone, by any route: consent records and their export, history, privacy
   opt-out settings and classifications, custom scripts, switching the banner on or off, "Delete all plugin data",
   capabilities, languages, A/B tests. Point the owner to them instead: the banner's switch is under **Settings**;

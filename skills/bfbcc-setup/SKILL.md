@@ -51,7 +51,8 @@ again once the banner is on.
      (`bfbcc-embeds`).
    - A second consent platform: the owner keeps one.
    Run the scan again afterwards: what is still not gated is outside the plugin's control.
-4. **Tell visitors what you use.** `set-policy-url` with the address the owner gives you; never guess one. Then the
+4. **Tell visitors what you use.** `set-policy-url` with the address the owner gives you; never guess one. If the site
+   has no cookie policy yet, offer to draft one (`bfbcc-cookie-policy`) for a lawyer to review. Then the
    cookie list (`bfbcc-cookie-list`): `add-library-entries` for every service whose library key has descriptions
    not yet in the list; for the rest, entries written from the vendor's own documentation with `save-cookie-entry`.
    The owner then ticks your entries as checked on the Inventory tab and confirms the step on Overview.

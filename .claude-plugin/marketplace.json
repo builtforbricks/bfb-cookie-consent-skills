@@ -11,7 +11,7 @@
     "plugins": [
         {
             "name": "bfb-cookie-consent",
-            "description": "BFB Cookie Consent skills for Bricks MCP clients: start-here, the setup flow, the banner, the scan, the cookie list, embeds and the update check.",
+            "description": "BFB Cookie Consent skills for Bricks MCP clients: start-here, the setup flow, the banner, the scan, the cookie list, embeds, the cookie policy draft and the update check.",
             "source": "./",
             "strict": false,
             "skills": [
@@ -21,6 +21,7 @@
                 "./skills/bfbcc-scan-findings",
                 "./skills/bfbcc-cookie-list",
                 "./skills/bfbcc-embeds",
+                "./skills/bfbcc-cookie-policy",
                 "./skills/bfbcc-update"
             ]
         }

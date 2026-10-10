@@ -9,4 +9,4 @@ plugin that has not shipped.
 Verified up to BFB Cookie Consent 1.0.0-beta.2, the testers' build with the AI agent abilities.
 
 - First pack: `bfbcc-start-here`, `bfbcc-setup`, `bfbcc-banner` with the starter banner exported from the plugin,
-  `bfbcc-scan-findings`, `bfbcc-cookie-list`, `bfbcc-embeds` and `bfbcc-update`.
+  `bfbcc-scan-findings`, `bfbcc-cookie-list`, `bfbcc-embeds`, `bfbcc-cookie-policy` and `bfbcc-update`.
