@@ -4,8 +4,8 @@ Agent skills for [BFB Cookie Consent](https://builtforbricks.com/cookie-consent/
 Bricks Builder by Built for Bricks: how to set up or check consent on a site, build a banner that works, read the scan,
 and write the cookie list. Checked against the plugin before every release.
 
-**Status: complete, awaiting its first release.** The first release goes out with BFB Cookie Consent 1.0.0-beta.2, the
-version it describes (`verifiedUpTo` in `skills/bfbcc-update/references/index.json`).
+**Status: released.** Each release names the BFB Cookie Consent version it was checked against (`verifiedUpTo` in
+`skills/bfbcc-update/references/index.json`) and goes out with that plugin version.
 
 ## What a skill is
 
@@ -18,7 +18,7 @@ how to write a cookie entry from the vendor's own documentation, and what never 
 
 ## Requirements
 
-- BFB Cookie Consent 1.0.0-beta.2 or later, on WordPress 6.9 or later for its abilities.
+- BFB Cookie Consent 1.0.0 or later, on WordPress 6.9 or later for its abilities.
 - Bricks 2.4 or later with its abilities enabled, for a client that works on the site.
 - A client that loads skills: Claude Code, Codex, Cursor, GitHub Copilot, or any client that reads `SKILL.md` folders.
 
