@@ -42,10 +42,15 @@ again once the banner is on.
    with every required part, selected and still switched off. To restyle it or build the owner's own design, use
    `bfbcc-banner`. Never switch the banner on.
 3. **Make them wait for permission.** For each not-gated service:
-   - Google Analytics 4, Google Ads, Tag Manager, Clarity: the copy installed elsewhere must go first (find it with
-     `bfbcc-scan-findings`; the owner removes it or approves your edit of a Bricks template). Then `set-preset` with
-     the id the finding's `examples` show (`gtag/js?id=G-…`, `gtm.js?id=GTM-…`, `AW-…`, `clarity.ms/tag/<id>`). Tag
-     Manager cannot sit beside the direct presets: choose one route with the owner.
+   - Google Analytics 4, Google Ads, Tag Manager, Clarity, and the Meta, TikTok and Reddit pixels: the copy installed
+     elsewhere must go first (find it with `bfbcc-scan-findings`; the owner removes it or approves your edit of a
+     Bricks template). Then `set-preset` with the id the finding's `examples` show (`gtag/js?id=G-…`,
+     `gtm.js?id=GTM-…`, `AW-…`, `clarity.ms/tag/<id>`, the digits in `fbq('init', …)`, the `sdkid=` in TikTok's
+     `events.js` address, the `a2_…` or `t2_…` in `rdt('init', …)`). Tag Manager cannot sit beside any direct preset:
+     choose one route with the owner.
+   - Tags another WordPress plugin adds: if that plugin supports the WP Consent API and the API plugin is active, it
+     follows the visitor's choice already (the Services tab says when the API is active). Otherwise the owner switches
+     the tag off there and registers it here.
    - Any other script: the owner registers it as a custom script on the Services tab (agents cannot), or uses the
      tool's own consent support. An ordinary YouTube or Google Maps embed: replace it with the plugin's element
      (`bfbcc-embeds`).

@@ -43,7 +43,9 @@ then register, then scan again**. Where tags usually live:
   plugin's element (`bfbcc-embeds`).
 
 The presets take the id the examples show: `gtag/js?id=G-…` (Google Analytics 4), `AW-…` (Google Ads),
-`gtm.js?id=GTM-…` (Tag Manager), `clarity.ms/tag/<project id>` (Clarity). Anything else is a custom script, which only
+`gtm.js?id=GTM-…` (Tag Manager), `clarity.ms/tag/<project id>` (Clarity), the digits in `fbq('init', …)` (Meta Pixel),
+the `sdkid=` in `analytics.tiktok.com/i18n/pixel/events.js` (TikTok Pixel), the `a2_…` or `t2_…` in `rdt('init', …)`
+(Reddit Pixel). Anything else is a custom script, which only
 the owner adds (Services tab), or the tool's own consent support. The Services tab's **Check for duplicate tags** looks
 for recognisable Google and Clarity tags on the home page.
 

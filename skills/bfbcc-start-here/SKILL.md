@@ -14,9 +14,10 @@ Load Bricks' own `bricks-start-here` first when it exists. Every other `bfbcc-*`
 - **The banner** is one published Bricks template, selected under Cookie Consent > Settings, holding exactly one
   Consent Banner (`bfbcc-banner`) with its panels, actions and category switches. A banner placed on a page does not
   count; the selected template is the banner on every page. See `bfbcc-banner`.
-- **Services** wait for permission: the four presets (Google Analytics 4, Google Ads, Google Tag Manager, Microsoft
-  Clarity) and the owner's custom scripts, plus the plugin's own YouTube and Google Map elements. **Nothing else is
-  held back.** A tag installed in the theme, another plugin, a Bricks code element or a tag manager keeps loading.
+- **Services** wait for permission: the seven presets (Google Analytics 4, Google Ads, Google Tag Manager, Microsoft
+  Clarity, and the Meta, TikTok and Reddit pixels) and the owner's custom scripts, plus the plugin's own YouTube and
+  Google Map elements. Plugins that support the WP Consent API also wait, while that API plugin is active. **Nothing
+  else is held back.** A tag installed in the theme, another plugin, a Bricks code element or a tag manager keeps loading.
 - **The scan** reads the site's pages as served and lists every third-party address they load that the plugin is not
   holding back. It finds; it never blocks. See `bfbcc-scan-findings`.
 - **The cookie list** (the Inventory tab) tells visitors what is stored, by whom, for how long and why. It describes;

@@ -4,6 +4,13 @@ Each release of this pack names the BFB Cookie Consent version it was checked ag
 `skills/bfbcc-update/references/index.json`). Skills and plugin are released together; a pack never describes a
 plugin that has not shipped.
 
+## 0.2.0, unreleased
+
+Verified up to BFB Cookie Consent 1.1.0.
+
+- `bfbcc-setup`, `bfbcc-start-here` and `bfbcc-scan-findings` know the Meta, TikTok and Reddit pixel presets and where
+  their ids appear, and that plugins supporting the WP Consent API follow the visitor's choice when that plugin is active.
+
 ## 0.1.2, unreleased
 
 Verified up to BFB Cookie Consent 1.0.1. No skill changed: 1.0.1 adds the Tag Manager event `bfbcc_consent_update`,
