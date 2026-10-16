@@ -20,7 +20,7 @@ Load Bricks' own `bricks-start-here` first when it exists. Every other `bfbcc-*`
   else is held back.** A tag installed in the theme, another plugin, a Bricks code element or a tag manager keeps loading.
 - **The scan** reads the site's pages as served and lists every third-party address they load that the plugin is not
   holding back. It finds; it never blocks. See `bfbcc-scan-findings`.
-- **The cookie list** (the Inventory tab) tells visitors what is stored, by whom, for how long and why. It describes;
+- **The cookie list** (the Cookie list tab) tells visitors what is stored, by whom, for how long and why. It describes;
   it registers and blocks nothing. See `bfbcc-cookie-list`.
 - **Purposes**: Necessary (always on), Preferences, Analytics, Marketing. Tag Manager waits for all three optional
   purposes, because a container can hold anything.

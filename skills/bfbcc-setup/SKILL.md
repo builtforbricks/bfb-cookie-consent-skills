@@ -20,9 +20,9 @@ and the owner confirms each change first.
 2. If no scan has run, or the owner changed things since, offer `run-scan`. It only reads the site's pages and changes
    nothing visitors see; it takes up to 20 seconds and may stop early on a slow host (run it again to continue).
 3. `get-scan-findings`. Summarise by bucket, in the owner's words:
-   - **Not gated, recognised**: loads before consent, and the library names it. The ones that matter most.
-   - **Not gated, unrecognised**: loads before consent; identify it (`lookup-service`, the vendor's site).
-   - **Consent platforms**: a second consent tool on the site; keep one.
+   - **Known, not held back**: loads before consent, and the library names it. The ones that matter most.
+   - **Unknown, not held back**: loads before consent; identify it (`lookup-service`, the vendor's site).
+   - **Other consent tools**: a second consent tool on the site; keep one.
    - **Infrastructure**: CDNs and hosting that carry files; usually nothing to hold back.
    - **Gated**: already waits for permission.
    For each not-gated item, say where it is probably installed (`bfbcc-scan-findings`) and what to do.
@@ -60,7 +60,7 @@ again once the banner is on.
    has no cookie policy yet, offer to draft one (`bfbcc-cookie-policy`) for a lawyer to review. Then the
    cookie list (`bfbcc-cookie-list`): `add-library-entries` for every service whose library key has descriptions
    not yet in the list; for the rest, entries written from the vendor's own documentation with `save-cookie-entry`.
-   The owner then ticks your entries as checked on the Inventory tab and confirms the step on Overview.
+   The owner then ticks your entries as checked on the Cookie list tab and confirms the step on Overview.
 5. **Switch on and check.** Only the owner switches the banner on (Settings) and purges page caches. Then they test,
    in a private window: the banner appears first; **Reject**, then reload: the banner stays away and analytics shows
    no new visit; in a new private window, **Accept all**: the visit appears; **Preferences** (or the site's cookie

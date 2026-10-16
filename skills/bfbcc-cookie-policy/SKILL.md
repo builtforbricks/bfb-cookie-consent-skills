@@ -16,7 +16,7 @@ top of the draft.
   `records_retention_days`), whether the banner is on, the last scan.
 - `get-services`: every registered service, its category, its script's host and its privacy classification.
 - `get-cookie-list`: every entry, with its provider, purpose, duration, category and type. If entries an agent wrote
-  are still unchecked (`written_by_agent_unchecked`), ask the owner to check them on the Inventory tab first, or
+  are still unchecked (`written_by_agent_unchecked`), ask the owner to check them on the Cookie list tab first, or
   mark them in the draft.
 - `get-scan-findings`: what still loads before consent. A policy describes the site as it is. If services load without
   permission, tell the owner and offer to fix that first (`bfbcc-scan-findings`); never write that a service waits

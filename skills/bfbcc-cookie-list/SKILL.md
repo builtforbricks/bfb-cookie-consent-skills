@@ -1,6 +1,6 @@
 ---
 name: bfbcc-cookie-list
-description: "Use when adding, writing, checking, translating or removing entries in the BFB Cookie Consent cookie list (the Inventory tab; get-cookie-list, add-library-entries, save-cookie-entry, remove-cookie-entry), or when the owner asks what cookies a service sets: the library first, otherwise the vendor's own documentation, exact names, durations never rounded down, and the agent mark."
+description: "Use when adding, writing, checking, translating or removing entries in the BFB Cookie Consent cookie list (the Cookie list tab; get-cookie-list, add-library-entries, save-cookie-entry, remove-cookie-entry), or when the owner asks what cookies a service sets: the library first, otherwise the vendor's own documentation, exact names, durations never rounded down, and the agent mark."
 ---
 
 # BFB Cookie Consent: the cookie list
@@ -45,10 +45,10 @@ duration or a purpose.
 
 ## The agent mark
 
-Every entry you save is marked **Added by an AI agent** on the Inventory tab until the owner ticks **Checked** and
+Every entry you save is marked **Added by an AI agent** on the Cookie list tab until the owner ticks **Checked** and
 saves. Visitors never see the mark, and checking does not ask them again. Ask the owner to check your entries against
 the source you named; never tick it for them. `save-cookie-entry` replaces the entry with the same name and language
 (it is then marked again). `remove-cookie-entry` removes only your unchecked entries; everything else the owner removes
-on the Inventory tab.
+on the Cookie list tab.
 
 Every change to the list asks visitors to choose again once the banner is on: write the entries as one batch.

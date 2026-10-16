@@ -4,6 +4,12 @@ Each release of this pack names the BFB Cookie Consent version it was checked ag
 `skills/bfbcc-update/references/index.json`). Skills and plugin are released together; a pack never describes a
 plugin that has not shipped.
 
+## 0.2.1, unreleased
+
+Verified up to BFB Cookie Consent 1.1.1, whose dashboard wording is plainer. The skills name the dashboard as the
+owner now sees it: the **Cookie list** tab (was Inventory) and the scan's **Known, not held back**, **Unknown, not held
+back** and **Other consent tools** groups.
+
 ## 0.2.0, 2026-10-15
 
 Verified up to BFB Cookie Consent 1.1.0.
