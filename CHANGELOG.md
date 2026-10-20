@@ -4,6 +4,14 @@ Each release of this pack names the BFB Cookie Consent version it was checked ag
 `skills/bfbcc-update/references/index.json`). Skills and plugin are released together; a pack never describes a
 plugin that has not shipped.
 
+## 0.3.0, unreleased
+
+Verified up to BFB Cookie Consent 1.2.0.
+
+- `bfbcc-banner` knows the Consent Banner's Style (styled or plain), the Consent Services element's policy link text,
+  the new Privacy Choices element, and that the banner must be a Section template.
+- `bfbcc-scan-findings` knows the scan's Necessary group, and that only the owner marks a service as necessary.
+
 ## 0.2.1, 2026-10-17
 
 Verified up to BFB Cookie Consent 1.1.1, whose dashboard wording is plainer. The skills name the dashboard as the

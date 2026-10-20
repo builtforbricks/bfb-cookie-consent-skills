@@ -34,12 +34,13 @@ custom CSS that hide a part count as missing on the published page: never hide o
 
 | Element | Settings (stored value, default in bold) | Notes |
 | --- | --- | --- |
-| `bfbcc-banner` | `position`: **`left`**, `right`, `center` (bottom left, right, centre); `preview`: **`notice`**, `preferences`, `all` (which panel the builder shows; visitors are unaffected) | Nestable root. One per template |
+| `bfbcc-banner` | `position`: **`left`**, `right`, `center` (bottom left, right, centre); `style`: **`styled`**, `plain` (layout and behaviour only, for owners who style everything); `preview`: **`notice`**, `preferences`, `all` (which panel the builder shows; visitors are unaffected) | Nestable root. One per template, which must be a Section template: a Popup one never shows |
 | `bfbcc-panel` | `view`: **`notice`**, `preferences` | Nestable. Holds any Bricks content |
 | `bfbcc-action` | `action`: `accept`, `reject`, **`preferences`**, `save`, `back`, `privacy`; `text`: the label | A button, except `privacy`, a link to the site's privacy-choices page ("Do Not Sell or Share My Personal Information"); `back` returns from preferences to the notice |
 | `bfbcc-category` | `category`: `necessary`, `preferences`, **`analytics`**, `marketing`; `label`; `description` | A switch; Necessary is permanently on and disabled |
-| `bfbcc-services` | none | Lists the registered services, the browser-preference entry and the policy link |
+| `bfbcc-services` | `policy_text`: the policy link's text (empty: "Privacy policy") | Lists the registered services, the browser-preference entry and the policy link |
 | `bfbcc-inventory` | `category`: **all**, or one purpose | The cookie list as a table; also on any page, or `[bfbcc_inventory]` |
+| `bfbcc-privacy-choices` | `button`: the label (default "Opt out") | The opt-out on the owner's own privacy choices page (Settings, Privacy choices page); not inside the banner. Also `[bfbcc_privacy_choices]` |
 
 Defaults are the builder panel's: raw JSON stores nothing for a default, so **always write `action`, `view` and
 `category` explicitly**. Headings, text, layout blocks, images and classes are ordinary Bricks elements and settings.

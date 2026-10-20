@@ -24,6 +24,7 @@ storage descriptions for it.
 | `consent_platforms` | Another consent tool on the site | Two consent tools fight; the owner keeps one |
 | `infrastructure` | CDNs and hosting that carry files | Usually nothing to hold back; describe what they store, if anything. Google Fonts is not one: the library lists it under Preferences, because loading it from Google is a consent question in Germany (Bricks can host fonts locally) |
 | `gated` | Already waits for permission | Nothing |
+| `necessary` | Strictly necessary, by the library (Cloudflare Turnstile) or the owner's marking | Nothing to hold back; it still belongs in the cookie list and privacy policy. Only the owner marks a service as necessary, on the Scan tab: never suggest it to get a step done |
 
 ## Registering does not stop a copy installed elsewhere
 
