@@ -9,7 +9,7 @@ plugin that has not shipped.
 Verified up to BFB Cookie Consent 1.2.0.
 
 - `bfbcc-banner` knows the Consent Banner's Style (styled or plain), the Consent Services element's policy link text,
-  the new Privacy Choices element, and that the banner must be a Section template.
+  the new Consent Privacy Choices element, and that the banner must be a Section template.
 - `bfbcc-scan-findings` knows the scan's Necessary group, and that only the owner marks a service as necessary.
 
 ## 0.2.1, 2026-10-17
