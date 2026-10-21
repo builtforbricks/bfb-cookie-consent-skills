@@ -8,7 +8,8 @@ description: "Use when adding or fixing a YouTube video or Google Map on a site 
 Read `bfbcc-start-here` first. An ordinary embed (an iframe, Bricks' own Video or Map element) loads the provider at
 once, before any consent. The plugin's two elements show a local placeholder instead and load the provider only after
 the visitor allows the embed's purpose. Replace ordinary embeds with them; never put an ordinary iframe behind the
-placeholder.
+placeholder. Where an embed can't be replaced (a map another plugin draws, or Bricks' Map element fed by each post's
+address), the owner holds back its address instead (`bfbcc-scan-findings`).
 
 ## `bfbcc-youtube`
 

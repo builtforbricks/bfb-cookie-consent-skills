@@ -16,8 +16,10 @@ Load Bricks' own `bricks-start-here` first when it exists. Every other `bfbcc-*`
   count; the selected template is the banner on every page. See `bfbcc-banner`.
 - **Services** wait for permission: the seven presets (Google Analytics 4, Google Ads, Google Tag Manager, Microsoft
   Clarity, and the Meta, TikTok and Reddit pixels) and the owner's custom scripts, plus the plugin's own YouTube and
-  Google Map elements. Plugins that support the WP Consent API also wait, while that API plugin is active. **Nothing
-  else is held back.** A tag installed in the theme, another plugin, a Bricks code element or a tag manager keeps loading.
+  Google Map elements, and the **addresses the owner holds back** (Services → Addresses to hold back, or **Hold back**
+  on a scan finding): every script and iframe from such an address waits, wherever it is installed. Plugins that
+  support the WP Consent API also wait, while that API plugin is active. **Nothing else is held back.** A tag installed
+  in the theme, another plugin, a Bricks code element or a tag manager keeps loading unless its address is held back.
 - **The scan** reads the site's pages as served and lists every third-party address they load that the plugin is not
   holding back. It finds; it never blocks. See `bfbcc-scan-findings`.
 - **The cookie list** (the Cookie list tab) tells visitors what is stored, by whom, for how long and why. It describes;
@@ -56,14 +58,14 @@ does not ask visitors again.
 ## Never
 
 - **Claim the site is compliant**, "GDPR-ready", "certified", or that the banner "blocks all tracking". Describe what
-  the plugin does instead: it holds back the services registered with it.
+  the plugin does instead: it holds back the services registered with it and the addresses the owner lists.
 - **Present a policy as the plugin's, or as checked.** When the owner asks for a cookie policy, write a full draft from
   the site's real data with `bfbcc-cookie-policy`: it is their draft, and a lawyer should review it before it is
   published. Never call it compliant.
 - Touch what the plugin keeps for the owner alone, by any route: consent records and their export, history, privacy
-  opt-out settings and classifications, custom scripts, switching the banner on or off, "Delete all plugin data",
+  opt-out settings and classifications, custom scripts, addresses to hold back, switching the banner on or off, "Delete all plugin data",
   capabilities, languages, A/B tests. Point the owner to them instead: the banner's switch is under **Settings**;
-  custom scripts are on the **Services** tab; consent records exist only once the owner switches on **Settings →
+  custom scripts and addresses to hold back are on the **Services** tab; consent records exist only once the owner switches on **Settings →
   Consent records** (off by default), and they are searched and exported as CSV on the **History** tab.
 - Invent a cookie name, a duration or a purpose. If the vendor publishes nothing, say so.
 - Tick an agent-written entry as checked, or confirm a setup step, on the owner's behalf. Those are theirs.

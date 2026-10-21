@@ -51,9 +51,10 @@ again once the banner is on.
    - Tags another WordPress plugin adds: if that plugin supports the WP Consent API and the API plugin is active, it
      follows the visitor's choice already (the Services tab says when the API is active). Otherwise the owner switches
      the tag off there and registers it here.
-   - Any other script: the owner registers it as a custom script on the Services tab (agents cannot), or uses the
-     tool's own consent support. An ordinary YouTube or Google Maps embed: replace it with the plugin's element
-     (`bfbcc-embeds`).
+   - Any other script: the owner registers it as a custom script on the Services tab, or holds back its address
+     (**Hold back** on the Scan tab; agents can do neither), or uses the tool's own consent support. An ordinary
+     YouTube or Google Maps embed: replace it with the plugin's element (`bfbcc-embeds`), or hold back its address
+     when it can't be replaced.
    - A second consent platform: the owner keeps one.
    Run the scan again afterwards: what is still not gated is outside the plugin's control.
 4. **Tell visitors what you use.** `set-policy-url` with the address the owner gives you; never guess one. If the site

@@ -4,6 +4,15 @@ Each release of this pack names the BFB Cookie Consent version it was checked ag
 `skills/bfbcc-update/references/index.json`). Skills and plugin are released together; a pack never describes a
 plugin that has not shipped.
 
+## 0.3.1 (unreleased: ships with BFB Cookie Consent 1.2.1)
+
+Verified up to BFB Cookie Consent 1.2.1.
+
+- `bfbcc-scan-findings` knows **Hold back**: an address held back waits wherever it is installed. It knows which
+  address the button uses, that agents can't add one, and what it doesn't cover.
+- `bfbcc-start-here`, `bfbcc-setup` and `bfbcc-embeds` count held addresses among what waits for permission, and offer
+  holding back for a map or widget that can't be replaced.
+
 ## 0.3.0, 2026-10-20
 
 Verified up to BFB Cookie Consent 1.2.0.

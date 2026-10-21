@@ -1,6 +1,6 @@
 ---
 name: bfbcc-scan-findings
-description: "Use when reading or explaining the BFB Cookie Consent scan (run-scan, get-scan-findings, the Scan tab), when the owner asks why a tool loads before consent or where a tracker comes from: what each bucket means, how to find where a tag is installed, remove it there and then register it, and what the scan cannot see."
+description: "Use when reading or explaining the BFB Cookie Consent scan (run-scan, get-scan-findings, the Scan tab), when the owner asks why a tool loads before consent or where a tracker comes from: what each bucket means, how to find where a tag is installed, remove it there and then register it, or hold back its address, and what the scan cannot see."
 ---
 
 # BFB Cookie Consent: the scan and its findings
@@ -19,11 +19,11 @@ storage descriptions for it.
 
 | Bucket | Means | What to do |
 | --- | --- | --- |
-| `not_gated_recognised` | Loads before consent; the library names it | Remove it where it is installed, then register it (below) |
-| `not_gated_unrecognised` | Loads before consent; unknown to the library | Identify it (`lookup-service`, the vendor's site), then as above |
+| `not_gated_recognised` | Loads before consent; the library names it | The owner holds back its address (**Hold back** on the Scan tab), or removes it where it is installed and registers it (below) |
+| `not_gated_unrecognised` | Loads before consent; unknown to the library | Identify it (`lookup-service`, the vendor's site), then as above. **Hold back** files an unknown address as Marketing until the owner checks it |
 | `consent_platforms` | Another consent tool on the site | Two consent tools fight; the owner keeps one |
 | `infrastructure` | CDNs and hosting that carry files | Usually nothing to hold back; describe what they store, if anything. Google Fonts is not one: the library lists it under Preferences, because loading it from Google is a consent question in Germany (Bricks can host fonts locally) |
-| `gated` | Already waits for permission | Nothing |
+| `gated` | Already waits for permission: registered, held back by address, or a Consent element | Nothing |
 | `necessary` | Strictly necessary, by the library (Cloudflare Turnstile) or the owner's marking | Nothing to hold back; it still belongs in the cookie list and privacy policy. Only the owner marks a service as necessary, on the Scan tab: never suggest it to get a step done |
 
 ## Registering does not stop a copy installed elsewhere
@@ -41,7 +41,19 @@ then register, then scan again**. Where tags usually live:
 - **A tag manager container** installed elsewhere: everything in it loads without the plugin knowing. Use the Tag
   Manager preset instead, with the plugin's consent template imported in the container (Services tab).
 - **An ordinary embed**: a YouTube or Google Maps iframe, Bricks' own Video or Map element. Replace it with the
-  plugin's element (`bfbcc-embeds`).
+  plugin's element (`bfbcc-embeds`), or hold back its address (below) when it can't be replaced.
+
+## Hold back an address
+
+The other route, and the only one for a tool that can't be removed without losing it: a map from WP Grid Builder's
+map facet, Bricks' Map element fed by each post's address, a widget another plugin adds. The owner presses **Hold
+back** on the finding, or adds the address under Services → Addresses to hold back. Every script and iframe from that
+address then waits until the visitor allows its category, wherever it is installed, including when another script adds
+it later; iframes show a placeholder. Agents cannot add addresses: point the owner to the button and say which address
+it will use. A shared host is narrowed to the service's path (`www.google.com/maps/`, so reCAPTCHA on the same host
+keeps working). Google Maps loads from `maps.google.com` (Bricks' Map element without an API key) or
+`maps.googleapis.com` (with a key, and WP Grid Builder). It does not hold back images, fonts or stylesheets, and it is
+not automatic blocking: only the listed addresses wait.
 
 The presets take the id the examples show: `gtag/js?id=G-…` (Google Analytics 4), `AW-…` (Google Ads),
 `gtm.js?id=GTM-…` (Tag Manager), `clarity.ms/tag/<project id>` (Clarity), the digits in `fbq('init', …)` (Meta Pixel),
