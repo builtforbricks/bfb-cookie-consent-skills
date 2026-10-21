@@ -4,6 +4,13 @@ Each release of this pack names the BFB Cookie Consent version it was checked ag
 `skills/bfbcc-update/references/index.json`). Skills and plugin are released together; a pack never describes a
 plugin that has not shipped.
 
+## 0.3.2 (unreleased: ships with BFB Cookie Consent 1.2.2)
+
+Verified up to BFB Cookie Consent 1.2.2.
+
+- `bfbcc-embeds` knows where the Google Maps placeholder shows for a map a script draws, and the
+  `data-bfbcc-placeholder` attribute for any other box.
+
 ## 0.3.1, 2026-10-21
 
 Verified up to BFB Cookie Consent 1.2.1.

@@ -10,7 +10,10 @@ once, before any consent. The plugin's two elements show a local placeholder ins
 the visitor allows the embed's purpose. Replace ordinary embeds with them; never put an ordinary iframe behind the
 placeholder. Where an embed can't be replaced (a map another plugin draws, or Bricks' Map element fed by each post's
 address), the owner holds it back instead: for Google Maps, the **Google Maps** switch under Services → Addresses to
-hold back (`bfbcc-scan-findings`).
+hold back (`bfbcc-scan-findings`). While Google Maps waits, its placeholder also shows in the map boxes a script draws
+into (WP Grid Builder's map facet, Bricks' Map element with an API key, `.acf-map`). For any other box, the element
+needs the attribute `data-bfbcc-placeholder` set to `google-maps` (or a held address, as entered); in Bricks that is
+Style > Attributes, an edit the owner approves.
 
 ## `bfbcc-youtube`
 
