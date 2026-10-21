@@ -16,8 +16,8 @@ Load Bricks' own `bricks-start-here` first when it exists. Every other `bfbcc-*`
   count; the selected template is the banner on every page. See `bfbcc-banner`.
 - **Services** wait for permission: the seven presets (Google Analytics 4, Google Ads, Google Tag Manager, Microsoft
   Clarity, and the Meta, TikTok and Reddit pixels) and the owner's custom scripts, plus the plugin's own YouTube and
-  Google Map elements, and the **addresses the owner holds back** (Services → Addresses to hold back, or **Hold back**
-  on a scan finding): every script and iframe from such an address waits, wherever it is installed. Plugins that
+  Google Map elements, and what the owner holds back (Services → Addresses to hold back: the **Google Maps** switch and
+  other addresses, or **Hold back** on a scan finding): every script and iframe from such an address waits, wherever it is installed. Plugins that
   support the WP Consent API also wait, while that API plugin is active. **Nothing else is held back.** A tag installed
   in the theme, another plugin, a Bricks code element or a tag manager keeps loading unless its address is held back.
 - **The scan** reads the site's pages as served and lists every third-party address they load that the plugin is not

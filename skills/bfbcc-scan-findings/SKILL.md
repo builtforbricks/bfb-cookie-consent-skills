@@ -47,13 +47,18 @@ then register, then scan again**. Where tags usually live:
 
 The other route, and the only one for a tool that can't be removed without losing it: a map from WP Grid Builder's
 map facet, Bricks' Map element fed by each post's address, a widget another plugin adds. The owner presses **Hold
-back** on the finding, or adds the address under Services → Addresses to hold back. Every script and iframe from that
-address then waits until the visitor allows its category, wherever it is installed, including when another script adds
-it later; iframes show a placeholder. Agents cannot add addresses: point the owner to the button and say which address
-it will use. A shared host is narrowed to the service's path (`www.google.com/maps/`, so reCAPTCHA on the same host
-keeps working). Google Maps loads from `maps.google.com` (Bricks' Map element without an API key) or
-`maps.googleapis.com` (with a key, and WP Grid Builder). It does not hold back images, fonts or stylesheets, and it is
-not automatic blocking: only the listed addresses wait.
+back** on the finding, or uses Services → Addresses to hold back. Everything from that address then waits until the
+visitor allows its category, wherever it is installed, including when another script adds it later; iframes show a
+placeholder.
+
+- **Google Maps** has its own switch there, covering every address it loads from (`maps.googleapis.com`,
+  `maps.google.com`, `google.com/maps`), whichever plugin or Bricks element shows the map; it waits for Preferences.
+  **Hold back** on a Google Maps finding switches it on. A Google Maps address typed as its own entry is refused.
+- **Any other address**: Hold back adds it under Other addresses, named and categorised from the library (an unknown
+  one starts as Marketing). A shared host is narrowed to the service's path.
+
+Agents can do neither: point the owner to the switch or the button. It does not hold back images, fonts or
+stylesheets, and it is not automatic blocking: only Google Maps, when switched on, and the listed addresses wait.
 
 The presets take the id the examples show: `gtag/js?id=G-…` (Google Analytics 4), `AW-…` (Google Ads),
 `gtm.js?id=GTM-…` (Tag Manager), `clarity.ms/tag/<project id>` (Clarity), the digits in `fbq('init', …)` (Meta Pixel),

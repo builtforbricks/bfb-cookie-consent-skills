@@ -8,8 +8,9 @@ plugin that has not shipped.
 
 Verified up to BFB Cookie Consent 1.2.1.
 
-- `bfbcc-scan-findings` knows **Hold back**: an address held back waits wherever it is installed. It knows which
-  address the button uses, that agents can't add one, and what it doesn't cover.
+- `bfbcc-scan-findings` knows **Hold back** and the **Google Maps** switch: what is held back waits wherever it is
+  installed. It knows what the button does for a Google Maps finding and for other addresses, that agents can't hold
+  anything back, and what it doesn't cover.
 - `bfbcc-start-here`, `bfbcc-setup` and `bfbcc-embeds` count held addresses among what waits for permission, and offer
   holding back for a map or widget that can't be replaced.
 
