@@ -15,6 +15,12 @@ into (WP Grid Builder's map facet, Bricks' Map element with an API key, `.acf-ma
 needs the attribute `data-bfbcc-placeholder` set to `google-maps` (or a held address, as entered); in Bricks that is
 Style > Attributes, an edit the owner approves.
 
+The placeholder's look is set in Bricks: both elements have Placeholder, Placeholder text and Placeholder button style
+groups (and "Remove the purple glow", "Hide the icon"). An owner who wants a placeholder of their own builds any block
+with a Consent Action set to Open preferences inside and gives it `data-bfbcc-placeholder-for="google-maps"` (or a held
+address): it shows only while the map waits and replaces the plugin's placeholders. A plain banner makes every
+placeholder plain too.
+
 ## `bfbcc-youtube`
 
 | Setting | Value |

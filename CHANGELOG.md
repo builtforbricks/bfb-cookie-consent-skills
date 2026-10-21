@@ -10,6 +10,8 @@ Verified up to BFB Cookie Consent 1.2.2.
 
 - `bfbcc-embeds` knows where the Google Maps placeholder shows for a map a script draws, and the
   `data-bfbcc-placeholder` attribute for any other box.
+- `bfbcc-embeds` knows the placeholder style groups, the owner's own placeholder (`data-bfbcc-placeholder-for`) and
+  that a plain banner makes placeholders plain.
 
 ## 0.3.1, 2026-10-21
 
