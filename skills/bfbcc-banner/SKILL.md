@@ -73,3 +73,12 @@ Any change to the template's content asks every visitor to choose again once the
 Overview tab previews the saved banner (buttons inactive). Then the owner tests the published page in a private
 window (`bfbcc-setup`, step 5). With Polylang, each language has its own translated, published template; a missing
 translation keeps that language's services off.
+
+## Opening the choices from the site's own links
+
+A Consent Action (Open preferences or Privacy choices) works anywhere on the site, as does any element with
+`data-bfbcc-action="preferences"` or `"privacy"`. A WordPress menu item can't carry attributes: give it the CSS class
+bfbcc-open-preferences or bfbcc-open-privacy (Appearance > Menus, CSS Classes under Screen Options), or make it a
+custom link to `#bfbcc-preferences` or `#bfbcc-privacy`. With such a link in place, the owner may switch off the
+plugin's own Cookie settings button or opt-out link in Settings; visitors must still find a way to change their choice.
+
