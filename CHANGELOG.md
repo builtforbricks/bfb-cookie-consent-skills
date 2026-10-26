@@ -4,6 +4,13 @@ Each release of this pack names the BFB Cookie Consent version it was checked ag
 `skills/bfbcc-update/references/index.json`). Skills and plugin are released together; a pack never describes a
 plugin that has not shipped.
 
+## 0.3.4 (unreleased: ships with BFB Cookie Consent 1.2.4)
+
+Verified up to BFB Cookie Consent 1.2.4.
+
+- `bfbcc-embeds` knows the placeholders' Load button (`load`, `hide_load`) and what it allows: one category, not one embed.
+- `bfbcc-banner` knows the Consent Action's `allow` action, for placeholders an owner designs.
+
 ## 0.3.3, 2026-10-22
 
 Verified up to BFB Cookie Consent 1.2.3.
