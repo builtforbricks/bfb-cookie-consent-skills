@@ -4,6 +4,12 @@ Each release of this pack names the BFB Cookie Consent version it was checked ag
 `skills/bfbcc-update/references/index.json`). Skills and plugin are released together; a pack never describes a
 plugin that has not shipped.
 
+## 0.3.5 (unreleased: ships with BFB Cookie Consent 1.2.5)
+
+Verified up to BFB Cookie Consent 1.2.5.
+
+- `bfbcc-embeds` knows that the Placeholder text style also styles the Review cookie choices link.
+
 ## 0.3.4, 2026-10-26
 
 Verified up to BFB Cookie Consent 1.2.4.

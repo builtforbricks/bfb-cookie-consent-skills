@@ -16,7 +16,8 @@ needs the attribute `data-bfbcc-placeholder` set to `google-maps` (or a held add
 Style > Attributes, an edit the owner approves.
 
 The placeholder's look is set in Bricks: both elements have Placeholder, Placeholder text and Placeholder button style
-groups (and "Remove the purple glow", "Hide the icon"). An owner who wants a placeholder of their own builds any block
+groups (and "Remove the purple glow", "Hide the icon"). Placeholder text also styles the "Review cookie choices" link
+under the Load button, so on a dark placeholder set the text colour there, not on the link. An owner who wants a placeholder of their own builds any block
 with a Consent Action set to Open preferences (or `allow` with the category it waits for) inside and gives it `data-bfbcc-placeholder-for="google-maps"` (or a held
 address): it shows only while the map waits and replaces the plugin's placeholders. A plain banner makes every
 placeholder plain too.
