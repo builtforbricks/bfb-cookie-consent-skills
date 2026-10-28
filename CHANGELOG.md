@@ -4,7 +4,7 @@ Each release of this pack names the BFB Cookie Consent version it was checked ag
 `skills/bfbcc-update/references/index.json`). Skills and plugin are released together; a pack never describes a
 plugin that has not shipped.
 
-## 0.3.7 (unreleased: ships with BFB Cookie Consent 1.2.7)
+## 0.3.7, 2026-10-28
 
 Verified up to BFB Cookie Consent 1.2.7.
 
