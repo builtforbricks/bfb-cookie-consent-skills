@@ -6,7 +6,7 @@
     },
     "metadata": {
         "description": "Agent skills for BFB Cookie Consent, the consent banner plugin for Bricks Builder: set up or check consent, build a banner that works, read the scan, write the cookie list.",
-        "version": "0.3.6"
+        "version": "0.3.7"
     },
     "plugins": [
         {

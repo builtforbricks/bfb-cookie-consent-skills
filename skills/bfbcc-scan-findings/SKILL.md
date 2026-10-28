@@ -56,6 +56,12 @@ placeholder.
   **Hold back** on a Google Maps finding switches it on. A Google Maps address typed as its own entry is refused.
 - **Any other address**: Hold back adds it under Other addresses, named and categorised from the library (an unknown
   one starts as Marketing). A shared host is narrowed to the service's path.
+- **A plugin on the site itself** (plugin 1.2.7 and later): on the site's own host only one plugin's folder can be
+  added, by the owner under Other addresses, such as `example.com/wp-content/plugins/plugin-name/`. It is for a plugin
+  that tracks visitors from its own scripts without asking the WP Consent API (an affiliate plugin's visit tracker, for
+  one). The scan doesn't list scripts from the site's own domain, so find the folder in the page source or the plugin's
+  documentation, and name its cookies so they are cleared. Pages, uploads, themes, WordPress and this plugin's own
+  folder are refused.
 
 Agents can do neither: point the owner to the switch or the button. It does not hold back images, fonts or
 stylesheets, and it is not automatic blocking: only Google Maps, when switched on, and the listed addresses wait.
