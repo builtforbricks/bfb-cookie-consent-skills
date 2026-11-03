@@ -52,7 +52,9 @@ Plain words and short sections. Adapt this order to what the owner wants:
    stored. If records are not kept, say nothing about them.
 7. **Privacy opt-outs**, if the owner shows the "Do Not Sell or Share" link (`[bfbcc_privacy]`) or any service is
    classified as selling, sharing or targeting ads: visitors can opt out of the sale or sharing of their personal
-   information and of targeted advertising, and a browser sending Global Privacy Control is treated as that opt-out.
+   information and of targeted advertising, a browser sending Global Privacy Control is treated as that opt-out, and a
+   visitor can withdraw their own opt-out (not while the browser sends the signal). Leave this section out when the
+   owner switched Settings → US privacy opt-out off: the site then has no opt-out.
 8. **Who else receives data**: the providers named in the cookie list. Where it goes and under what safeguards, only
    as the owner states it; otherwise a placeholder for their lawyer.
 9. **Legal basis**, if the owner wants it stated: write what they confirm (commonly consent for optional cookies, and

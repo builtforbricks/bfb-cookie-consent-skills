@@ -40,7 +40,7 @@ custom CSS that hide a part count as missing on the published page: never hide o
 | `bfbcc-category` | `category`: `necessary`, `preferences`, **`analytics`**, `marketing`; `label`; `description` | A switch; Necessary is permanently on and disabled |
 | `bfbcc-services` | `policy_text`: the policy link's text (empty: "Privacy policy") | Lists the registered services, the browser-preference entry and the policy link |
 | `bfbcc-inventory` | `category`: **all**, or one purpose | The cookie list as a table; also on any page, or `[bfbcc_inventory]` |
-| `bfbcc-privacy-choices` | `button`: the label (default "Opt out") | The opt-out on the owner's own privacy choices page (Settings, Privacy choices page); not inside the banner. Also `[bfbcc_privacy_choices]` |
+| `bfbcc-privacy-choices` | `button`: the label (default "Opt out"); `withdraw`: the label of the button a visitor who opted out gets to undo it (default "Withdraw my opt-out") | The opt-out on the owner's own privacy choices page (Settings, Privacy choices page); not inside the banner. Also `[bfbcc_privacy_choices]`. Renders nothing when Settings → US privacy opt-out is off |
 
 Defaults are the builder panel's: raw JSON stores nothing for a default, so **always write `action`, `view` and
 `category` explicitly**. Headings, text, layout blocks, images and classes are ordinary Bricks elements and settings.

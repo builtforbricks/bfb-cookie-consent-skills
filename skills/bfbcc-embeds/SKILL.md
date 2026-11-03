@@ -48,6 +48,8 @@ Write `consent_category` explicitly: defaults are the builder panel's and raw JS
 
 The placeholder has two buttons. Load allows the embed's `consent_category`, keeps the visitor's other choices, saves that and loads the embed in place; because choices are per category it allows everything in that category, so never describe it as consent to this one embed. Review cookie choices opens the visitor's choices and grants nothing. Held addresses' placeholders have the same pair (Load map for Google Maps). When the visitor allowed the
 purpose but opted out of sale or sharing, the placeholder says the opt-out is holding the embed back: that is what
-`privacy` decides, and it is the owner's call, so never change it. Withdrawing consent removes managed embeds again.
+`privacy` decides, and it is the owner's call, so never change it. The visitor can lift their own opt-out with Withdraw
+my opt-out on the privacy choices; an owner who opted out while testing does the same. On a site no US privacy law applies to,
+the owner can switch Settings → US privacy opt-out off instead. Withdrawing consent removes managed embeds again.
 Adding or editing an embed on a page does not change the banner, so visitors are not asked again; the embed's
 provider still belongs in the cookie list (`bfbcc-cookie-list`), which does.
