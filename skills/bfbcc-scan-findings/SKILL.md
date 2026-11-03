@@ -57,7 +57,8 @@ placeholder.
 - **Any other address**: Hold back adds it under Other addresses, named and categorised from the library (an unknown
   one starts as Marketing). A shared host is narrowed to the service's path.
 - **A plugin on the site itself** (plugin 1.2.7 and later): on the site's own host only one plugin's folder can be
-  added, by the owner under Other addresses, such as `example.com/wp-content/plugins/plugin-name/`. It is for a plugin
+  added, by the owner under Other addresses, such as `example.com/wp-content/plugins/plugin-name/` (from plugin 1.2.9
+  also the path alone, `/wp-content/plugins/plugin-name/`, saved with the site's host). It is for a plugin
   that tracks visitors from its own scripts without asking the WP Consent API (an affiliate plugin's visit tracker, for
   one). The scan doesn't list scripts from the site's own domain, so find the folder in the page source or the plugin's
   documentation, and name its cookies so they are cleared. Pages, uploads, themes, WordPress and this plugin's own
