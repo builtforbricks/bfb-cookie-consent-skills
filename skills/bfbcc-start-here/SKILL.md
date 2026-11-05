@@ -66,7 +66,9 @@ does not ask visitors again.
   opt-out settings and classifications, custom scripts, addresses to hold back, switching the banner on or off, "Delete all plugin data",
   capabilities, languages, A/B tests. Point the owner to them instead: the banner's switch is under **Settings**;
   custom scripts and addresses to hold back are on the **Services** tab; consent records exist only once the owner switches on **Settings →
-  Consent records** (off by default), and they are searched and exported as CSV on the **History** tab.
+  Consent records** (off by default), and they are searched and exported as CSV on the **History** tab. A static copy
+  made with Brickstatic (plugin 1.2.10 and later) runs the banner and the US opt-out in the browser, but records no
+  decisions and runs no A/B test, and settings changes reach it with the next export.
 - Invent a cookie name, a duration or a purpose. If the vendor publishes nothing, say so.
 - Tick an agent-written entry as checked, or confirm a setup step, on the owner's behalf. Those are theirs.
 - Register a service while its copy installed elsewhere still loads: it then loads twice, once without permission.

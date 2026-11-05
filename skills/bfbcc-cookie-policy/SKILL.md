@@ -49,7 +49,9 @@ Plain words and short sections. Adapt this order to what the owner wants:
 6. **Consent records**, only if `records_kept` is true: when a visitor accepts, rejects or saves a choice, the site
    records the decision, the allowed categories, the time it was received, a random record ID and the notice version,
    for `records_retention_days` days. No IP address, user agent, account, visitor identifier or page address is
-   stored. If records are not kept, say nothing about them.
+   stored. If records are not kept, say nothing about them. Ask the owner whether visitors get a static copy of the site
+   made with Brickstatic (plugin 1.2.10 and later): decisions made on a static copy are not recorded, whatever
+   `records_kept` says, so if the public site is one, say nothing about records. Whether they need the log is their call.
 7. **Privacy opt-outs**, if the owner shows the "Do Not Sell or Share" link (`[bfbcc_privacy]`) or any service is
    classified as selling, sharing or targeting ads: visitors can opt out of the sale or sharing of their personal
    information and of targeted advertising, a browser sending Global Privacy Control is treated as that opt-out, and a

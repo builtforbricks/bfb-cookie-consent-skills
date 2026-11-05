@@ -4,6 +4,13 @@ Each release of this pack names the BFB Cookie Consent version it was checked ag
 `skills/bfbcc-update/references/index.json`). Skills and plugin are released together; a pack never describes a
 plugin that has not shipped.
 
+## 0.3.10 (unreleased: ships with BFB Cookie Consent 1.2.10)
+
+Verified up to BFB Cookie Consent 1.2.10.
+
+- `bfbcc-cookie-policy` no longer describes consent records for a public site that is a Brickstatic static copy, where decisions are not recorded.
+- `bfbcc-start-here` knows what a static copy runs and what it doesn't.
+
 ## 0.3.9, 2026-11-03
 
 Verified up to BFB Cookie Consent 1.2.9.
