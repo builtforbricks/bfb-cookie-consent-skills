@@ -11,7 +11,7 @@ and stores a report. On a slow host it stops early (`stopped_early`); run it aga
 `read_nothing` means the host stops the site from requesting its own pages (Tools > Site Health says so too) or the
 pages are too slow: an empty report then proves nothing.
 
-From plugin 1.3.0, on a site published with Brickstatic, the owner can choose on the Scan tab to read the last static
+From plugin 1.3.0, on a site published with Brickstatic 1.8.1 or later, the owner can choose on the Scan tab to read the last static
 export instead. A report carrying `read_static_export` came from that: it lists what the export holds, its pages keep
 their addresses on the WordPress site, and a script the static host adds itself won't show. `run-scan` always reads the
 site, so it replaces that report: tell the owner before running it.
