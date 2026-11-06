@@ -11,6 +11,11 @@ and stores a report. On a slow host it stops early (`stopped_early`); run it aga
 `read_nothing` means the host stops the site from requesting its own pages (Tools > Site Health says so too) or the
 pages are too slow: an empty report then proves nothing.
 
+From plugin 1.3.0, on a site published with Brickstatic, the owner can choose on the Scan tab to read the last static
+export instead. A report carrying `read_static_export` came from that: it lists what the export holds, its pages keep
+their addresses on the WordPress site, and a script the static host adds itself won't show. `run-scan` always reads the
+site, so it replaces that report: tell the owner before running it.
+
 ## The buckets
 
 Each finding is a third-party **address** with the **pages** it was seen on, **examples** of the URLs, the
@@ -65,7 +70,9 @@ placeholder.
   folder are refused.
 
 Agents can do neither: point the owner to the switch or the button. It does not hold back images, fonts or
-stylesheets, and it is not automatic blocking: only Google Maps, when switched on, and the listed addresses wait.
+stylesheets, with one exception from plugin 1.3.0: a Bricks Video's preview thumbnail waits with the video, and the
+visitor sees the placeholder in its box. It is not automatic blocking: only Google Maps, when switched on, and the
+listed addresses wait.
 
 The presets take the id the examples show: `gtag/js?id=G-…` (Google Analytics 4), `AW-…` (Google Ads),
 `gtm.js?id=GTM-…` (Tag Manager), `clarity.ms/tag/<project id>` (Clarity), the digits in `fbq('init', …)` (Meta Pixel),

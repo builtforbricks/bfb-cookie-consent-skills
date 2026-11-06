@@ -4,6 +4,12 @@ Each release of this pack names the BFB Cookie Consent version it was checked ag
 `skills/bfbcc-update/references/index.json`). Skills and plugin are released together; a pack never describes a
 plugin that has not shipped.
 
+## 0.3.11 (unreleased)
+
+Verified up to BFB Cookie Consent 1.3.0.
+
+- `bfbcc-scan-findings` knows the scan can read a static export, and that a Bricks Video's preview thumbnail waits with the video.
+
 ## 0.3.10, 2026-11-05
 
 Verified up to BFB Cookie Consent 1.2.10.
